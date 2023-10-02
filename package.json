@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/node": "^20.8.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.5"
+  }
+}

@@ -1,4 +1,4 @@
-﻿import readline from 'readline-sync';
+﻿import readlinesync from 'readline-sync';
 
 async function main() {
 
@@ -26,7 +26,7 @@ async function main() {
         console.log("                                                     ");
 
         console.log("Entre com a opção desejada: ");
-        opcao = readline.questionInt("");
+        opcao = readlinesync.questionInt("");
 
         if (opcao == 9) {
             console.log("\nBanco do Brazil com Z - O seu Futuro começa aqui!");

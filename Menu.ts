@@ -8,9 +8,8 @@ async function main() {
 
     let conta: Conta = new Conta(1, 123, 1, "João da Silva", 1000);
     conta.visualizar();
-    conta.saldo = 2000;
-    conta.titular = "Paulo da Silva";
     conta.sacar(500);
+    conta.visualizar();
     conta.depositar(1000);
     conta.visualizar();
 

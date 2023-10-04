@@ -6,7 +6,7 @@ async function main() {
 
     let opcao: number;
 
-    let conta: Conta = new Conta(1, 123, 1, "João da Silva", 1000);
+    const conta: Conta = new Conta(1, 123, 1, "João da Silva", 1000);
     conta.visualizar();
     conta.sacar(500);
     conta.visualizar();

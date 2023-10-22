@@ -1,6 +1,6 @@
 ﻿import readlinesync from 'readline-sync';
 
-async function main() {
+export function main() {
 
     let opcao: number;
 

@@ -8,21 +8,21 @@ export function main() {
 
     let opcao: number;
 
-    const conta: Conta = new Conta(1, 123, 1, "João da Silva", 1000);
+    const conta: Conta = new Conta(1, 123, 1, "Adriana", 10000);
     conta.visualizar();
-    conta.sacar(500);
+    conta.sacar(10500);
     conta.visualizar();
-    conta.depositar(1000);
+    conta.depositar(5000);
     conta.visualizar();
 
-    const contacorrente: ContaCorrente = new ContaCorrente(2, 123, 1, "João da Silva", 1000, 100);
+    const contacorrente: ContaCorrente = new ContaCorrente(2, 123, 1, "Mariana", 15000, 1000);
     contacorrente.visualizar();
     contacorrente.sacar(2000);
     contacorrente.visualizar();
     contacorrente.depositar(1000);
     contacorrente.visualizar();
 
-    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 1, "João da Silva", 1000, 10);
+    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 1, "Victor", 1000, 10);
     contapoupanca.visualizar();
     contapoupanca.sacar(200);
     contapoupanca.visualizar();
@@ -31,7 +31,8 @@ export function main() {
 
     while (true) {
 
-        console.log(colors.bg.black, colors.fg.yellow, "*****************************************************");
+        console.log(colors.bg.black, colors.fg.yellow, 
+                    "*****************************************************");
         console.log("                                                     ");
         console.log("                BANCO DO BRAZIL COM Z                ");
         console.log("                                                     ");

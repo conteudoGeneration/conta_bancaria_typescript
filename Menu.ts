@@ -22,7 +22,7 @@ export function main() {
     contacorrente.depositar(1000);
     contacorrente.visualizar();
 
-    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 1, "Victor", 1000, 10);
+    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 2, "Victor", 1000, 10);
     contapoupanca.visualizar();
     contapoupanca.sacar(200);
     contapoupanca.visualizar();

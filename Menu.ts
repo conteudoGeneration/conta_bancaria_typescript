@@ -15,7 +15,8 @@ export function main() {
 
     while (true) {
 
-        console.log(colors.bg.black, colors.fg.yellow, "*****************************************************");
+        console.log(colors.bg.black, colors.fg.yellow, 
+                    "*****************************************************");
         console.log("                                                     ");
         console.log("                BANCO DO BRAZIL COM Z                ");
         console.log("                                                     ");
@@ -32,7 +33,8 @@ export function main() {
         console.log("            9 - Sair                                 ");
         console.log("                                                     ");
         console.log("*****************************************************");
-        console.log("                                                     ", colors.reset);
+        console.log("                                                     ", 
+        colors.reset);
 
         console.log("Entre com a opção desejada: ");
         opcao = readlinesync.questionInt("");

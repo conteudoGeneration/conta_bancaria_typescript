@@ -1,7 +1,7 @@
 ﻿import readlinesync from 'readline-sync';
 import { colors } from './src/util/Colors';
 
-async function main() {
+export function main() {
 
     let opcao: number;
 

@@ -4,7 +4,7 @@ import { Conta } from './src/model/Conta';
 import { ContaCorrente } from './src/model/ContaCorrente';
 import { ContaPoupanca } from './src/model/ContaPoupanca';
 
-async function main() {
+export function main() {
 
     let opcao: number;
 

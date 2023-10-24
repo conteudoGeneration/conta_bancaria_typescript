@@ -26,11 +26,19 @@ export class ContaController implements ContaRepository {
     cadastrar(conta: Conta): void {
         this.listaContas.push(conta);
         console.log(colors.fg.green, "\nA Conta número: " + conta.numero +
-            " foi criada com sucesso!", colors.reset);
+                    " foi criada com sucesso!", colors.reset);
     }
 
     atualizar(conta: Conta): void {
-        throw new Error("Method not implemented.");
+        let buscaConta: any = this.buscarNoArray(conta.numero);
+
+        if (buscaConta != null) {
+            this.listaContas[this.listaContas.indexOf(buscaConta)] = conta;
+            console.log(colors.fg.green, "\nA Conta numero: " + conta.numero + 
+                        " foi atualizada com sucesso!", colors.reset);
+        } else
+            console.log(colors.fg.red, "\nA Conta numero: " + conta.numero + 
+                        " não foi encontrada!", colors.reset);
     }
 
     deletar(numero: number): void {

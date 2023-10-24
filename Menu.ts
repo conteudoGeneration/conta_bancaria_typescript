@@ -131,8 +131,6 @@ export function main() {
 
                     tipo = conta.tipo;
 
-                    console.log(tipo);
-
                     console.log("\nDigite o Saldo da conta (R$): ");
                     saldo = readlinesync.questionFloat("");
 
@@ -152,7 +150,8 @@ export function main() {
                     }
 
                 } else {
-                    console.log(colors.fg.red, "\nA Conta numero: " + numero + " não foi encontrada!", colors.reset);
+                    console.log(colors.fg.red, "\nA Conta numero: " + numero + 
+                    " não foi encontrada!", colors.reset);
                 }
 
                 keyPress()

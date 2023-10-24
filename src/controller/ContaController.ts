@@ -30,7 +30,7 @@ export class ContaController implements ContaRepository {
     }
 
     atualizar(conta: Conta): void {
-        let buscaConta: any = this.buscarNoArray(conta.numero);
+        let buscaConta = this.buscarNoArray(conta.numero);
 
         if (buscaConta != null) {
             this.listaContas[this.listaContas.indexOf(buscaConta)] = conta;

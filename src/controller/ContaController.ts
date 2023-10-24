@@ -1,5 +1,6 @@
 ﻿import { Conta } from "../model/Conta";
 import { ContaRepository } from "../repository/ContaRepository";
+import { colors } from "../util/Colors";
 
 export class ContaController implements ContaRepository {
 
@@ -17,7 +18,9 @@ export class ContaController implements ContaRepository {
     }
 
     cadastrar(conta: Conta): void {
-        throw new Error("Method not implemented.");
+        this.listaContas.push(conta);
+        console.log(colors.fg.green, "\nA Conta número: " + conta.numero + 
+                    " foi criada com sucesso!", colors.reset);
     }
 
     atualizar(conta: Conta): void {
@@ -38,6 +41,13 @@ export class ContaController implements ContaRepository {
 
     transferir(numeroOrigem: number, numeroDestino: number, valor: number): void {
         throw new Error("Method not implemented.");
+    }
+    
+    /*Métodos Auxiliares*/
+
+    /*Gerar Número da Conta*/
+    public gerarNumero(): number {
+        return ++ this.numero;
     }
     
 }

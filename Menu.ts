@@ -104,7 +104,12 @@ export function main() {
                 keyPress()
                 break;
             case 3:
-                console.log(colors.fg.whitestrong, "\n\nConsultar dados da Conta - por número\n\n", colors.reset);
+                console.log(colors.fg.whitestrong, "\n\nConsultar dados da Conta - por número\n\n"
+                , colors.reset);
+
+                console.log("Digite o número da Conta: ");
+                numero = readlinesync.questionInt("");
+                contas.procurarPorNumero(numero);
 
                 keyPress()
                 break;

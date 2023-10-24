@@ -42,7 +42,15 @@ export class ContaController implements ContaRepository {
     }
 
     deletar(numero: number): void {
-        throw new Error("Method not implemented.");
+        let buscaConta = this.buscarNoArray(numero);
+
+        if (buscaConta != null) {
+            this.listaContas.splice(this.listaContas.indexOf(buscaConta), 1);
+        	console.log(colors.fg.green,"\nA Conta numero: " + numero + 
+                        " foi apagada com sucesso!", colors.reset);
+        }else
+        console.log(colors.fg.red,"\nA Conta numero: " + numero + 
+                    " não foi encontrada!", colors.reset);
     }
 
     sacar(numero: number, valor: number): void {
